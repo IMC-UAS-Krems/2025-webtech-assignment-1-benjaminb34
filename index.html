@@ -1,30 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Welcome</title>
-        <meta charset="UTF-8">
-        <meta name="author" content="Benjamin">
-        <meta name="keywords" content="website, homework, html, IMC">
-        <meta name="description" content="This is a website about me. It was made for a school assingment">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
 
-        <!-- Navigation -->
-        <header>
-            <div class="navibox">
-                    <nav> <!-- Navigation had a problem where the tags had empty text strings in them. See document link_01 -->
-                        <a class="navisite" id="currentsite" href="index.html">Welcome</a><!--
-                        --><a class="navisite" href="about.html">Abouat</a><!--
-                        --><a class="navisite"href="gallery.html">Gallery</a><!--
-                        --><a class="navisite" href="cv.html">CV</a><!--
-                        --><a class="navisite" href="contact.html">Contact</a>
-                    </nav>
-            </div>
-        </header>
-        <!-- Title of the webpage -->
-         <h1 id="title"> Benjamin's webpage</h1>
+<head>
+    <title>Welcome</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Benjamin">
+    <meta name="keywords" content="website, homework, html, IMC">
+    <meta name="description" content="This is a website about me. It was made for a school assingment">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-    </body>
+<body>
+    <!-- NAVIGATION -->
+    <header>
+        <nav>
+            <a href="index.html" class="currentsite">Welcome</a><a href="about.html">About</a><a
+                href="gallery.html">Gallery</a><a href="cv.html">CV</a><a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- TITLE -->
+    <div id="title">
+        <h1>BENJAMIN'S WEBPAGE</h1>
+    </div>
+
+    <!-- MAIN CONTENT (using grid to assign content)-->
+    <main style="padding: 5px;">
+
+        <article id="item_article1">
+            <h2>WELCOME TO MY WEBPAGE!</h2>
+            <p>This is webpage has been made for the Web Technologies class at IMC Krems University in October, 2025.
+                Since this is my first functional
+                webpage, it has historical significance. I am 100% sure it will be fun to explore again when I
+                rediscover this someday.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minima labore, similique molestiae
+                voluptates vero. Quas porro laudantium sunt voluptas asperiores maxime? Totam sed at, dolorum incidunt
+                odit aliquam doloribus.</p>
+        </article>
+        <aside id="item_aside1">
+            <figure style="margin: 5px;">
+                <div style="margin-left: 5%; margin-right: 5%;">
+                    <img src="images/dog.jpg" style="margin-left: 0; margin-right: 0; width: 100%;">
+                </div>
+                <figcaption style="text-align: center; color: white;">If you have any questions, please contact me on
+                    the contact page
+                </figcaption>
+            </figure>
+        </aside>
+    </main>
+
+</body>
+
 </html>
