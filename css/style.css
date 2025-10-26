@@ -42,11 +42,24 @@ h1 {
 }
 
 main {
-    border: 2px black solid
+    border: 2px black solid;
+    background-color: rgb(76, 76, 76);
 }
 main h2, p {
     color:aliceblue
 }
+
+footer {
+    display: block;
+    text-align: center;
+    background-color: rgb(52, 51, 51);
+    position: fixed;
+    bottom: 3px;
+    color: rgb(26, 26, 26);
+    width: 100%;
+    left: 0
+}
+
 
 /*------- FOR TABLETS --------*/
 
@@ -83,6 +96,9 @@ main h2, p {
         background-color: rgb(76, 76, 76);
 
     }
+    #item_article1 {
+        font-size: 1.2em;
+    }
 }
 
 /*------- FOR DESKTOP --------*/
@@ -107,12 +123,22 @@ main h2, p {
         margin-top: 3em;
     }
 
-    main {
+    .maingrid {
         display: grid;
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 17%;
+        margin-right: 17%;
         background-color: rgb(76, 76, 76);
         grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+        gap: 0.5em;
+        justify-items: stretch;
+    }
+
+    .gallerygrid {
+        display: grid;
+        margin-left: 0;
+        margin-right: 0;
+        background-color: rgb(76, 76, 76);
+        grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr;
         gap: 0.5em;
         justify-items: stretch;
     }
@@ -125,7 +151,8 @@ main h2, p {
     }
 
     #item_article1 {
-        grid-area: 1 / 1/ 4 / 3
+        grid-area: 1 / 1/ 4 / 3;
+        font-size: 1.2em;
     }
 
     #item_aside1 {
@@ -133,4 +160,14 @@ main h2, p {
         border: 1px black solid;
         align-self: center;
     }
+
+    #mainaboutme {
+        margin-left: 17%;
+        margin-right: 17%;
+    }
+
+    #gallery1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+        
 }
