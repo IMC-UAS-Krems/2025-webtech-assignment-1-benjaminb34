@@ -1,3 +1,8 @@
+html {
+    scrollbar-gutter: stable;
+    /* In chrome, scrollbar always pushed content away, and it was annoying. I found this solution on dev.to, links in the pdf*/
+}
+
 body {
     background-color: rgb(28, 28, 28);
     font-family: "Lucida Console", "Courier New", monospace;
@@ -66,12 +71,16 @@ footer {
     left: 0
 }
 
+footer>span {
+    color: white
+}
+
 form {
     color: aliceblue
 }
 
 input[type="text"] {
-    /* only styling type=text inputs. I saw this method on stack overflow, but i dont have the link anymore :( */
+    /* only styling type=text inputs. I saw this method in a stack overflow comment once and remembered it*/
     width: 75%
 }
 
@@ -88,6 +97,11 @@ input[type="text"] {
     resize: none;
     height: 175px;
     margin-bottom: 10px;
+}
+
+#cvgrid {
+    padding: 10px;
+    color: white
 }
 /*------- FOR TABLETS --------*/
 
@@ -126,7 +140,6 @@ input[type="text"] {
         margin-left: 10%;
         margin-right: 10%;
         background-color: rgb(76, 76, 76);
-
     }
 
     #item_article1 {
@@ -139,7 +152,8 @@ input[type="text"] {
 
     #formsection>form>label {
         font-size: 1.1em;
-}
+    }
+
 }
 
 /*------- FOR DESKTOP --------*/
@@ -272,5 +286,22 @@ input[type="text"] {
 
     #formsection>form>p {
         font-size: 1.2em;
-}
+    }
+
+    #cvgrid {
+        display: grid;
+        grid-template-columns: 65% 35%;
+        color: white
+    }
+
+    #cvmain {
+        grid-area: 1 / 1 / 2 / 2;
+        padding: 15px
+    }
+
+    #cvaside {
+        grid-area: 1 / 2 / 2 / 3;
+        padding: 10px;
+        background-color: rgb(58, 58, 58);
+    }
 }
