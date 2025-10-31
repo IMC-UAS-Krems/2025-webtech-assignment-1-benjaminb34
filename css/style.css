@@ -49,8 +49,10 @@ main {
     border: 2px black solid;
     background-color: rgb(76, 76, 76);
 }
-main h2, p {
-    color:aliceblue
+
+main h2,
+p {
+    color: aliceblue
 }
 
 footer {
@@ -58,16 +60,42 @@ footer {
     text-align: center;
     background-color: rgb(52, 51, 51);
     position: fixed;
-    bottom: 3px;
+    bottom: 0px;
     color: rgb(26, 26, 26);
     width: 100%;
     left: 0
 }
 
+form {
+    color: aliceblue
+}
 
+input[type="text"] {
+    /* only styling type=text inputs. I saw this method on stack overflow, but i dont have the link anymore :( */
+    width: 75%
+}
+
+#formsection>h2 {
+    font-size: 1.5em;
+}
+
+#formsection>form>label {
+    font-size: 1em;
+}
+
+#message {
+    width: 100%;
+    resize: none;
+    height: 175px;
+    margin-bottom: 10px;
+}
 /*------- FOR TABLETS --------*/
 
 @media only screen and (min-width: 550px) {
+
+    #formsection>h2 {
+        font-size: 2em;
+    }
 
     header {
         border: none;
@@ -100,9 +128,18 @@ footer {
         background-color: rgb(76, 76, 76);
 
     }
+
     #item_article1 {
         font-size: 1.2em;
     }
+
+    input[type="text"] {
+        width: 40%;
+    }
+
+    #formsection>form>label {
+        font-size: 1.1em;
+}
 }
 
 /*------- FOR DESKTOP --------*/
@@ -128,8 +165,9 @@ footer {
     }
 
     main {
-         margin-left: 17%;
+        margin-left: 17%;
         margin-right: 17%;
+        margin-bottom: 3%;
     }
 
     .maingrid {
@@ -173,6 +211,7 @@ footer {
     #mainaboutme {
         margin-left: 17%;
         margin-right: 17%;
+        margin-bottom: 3%;
     }
 
     #gallery1 {
@@ -183,7 +222,7 @@ footer {
     #gallery2 {
         grid-area: 1 / 2 / 2 / 3;
         height: 100%;
-    }   
+    }
 
     #gallery3 {
         grid-area: 2 / 1 / 3 / 2;
@@ -222,4 +261,16 @@ footer {
     #gallery10 {
         grid-area: 5 / 2 / 6 / 3;
     }
+
+    input[type="text"] {
+        width: 35%;
+    }
+
+    #formsection>h2 {
+        font-size: 2.2em;
+    }
+
+    #formsection>form>p {
+        font-size: 1.2em;
+}
 }
