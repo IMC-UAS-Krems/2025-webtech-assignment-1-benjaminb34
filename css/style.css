@@ -55,8 +55,7 @@ main {
     background-color: rgb(76, 76, 76);
 }
 
-main h2,
-p {
+main h2, p {
     color: aliceblue
 }
 
@@ -102,6 +101,27 @@ input[type="text"] {
 #cvgrid {
     padding: 10px;
     color: white
+}
+
+#articleaboutme {
+   font-size: 1.2em; 
+}
+
+#imageaobutme {
+    width: 100%;
+}
+
+#figaboutme {
+    border: 1px solid black; 
+    padding: 10px
+}
+
+#bottomarticle > p {
+    font-size: 1.2em; 
+}
+
+p {
+    letter-spacing: 1px; /* Chrome and Firefox had different letter spacing, so i had to make them the same */
 }
 /*------- FOR TABLETS --------*/
 
@@ -158,7 +178,7 @@ input[type="text"] {
 
 /*------- FOR DESKTOP --------*/
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
     header {
         border: none;
         display: inline;
@@ -294,7 +314,7 @@ input[type="text"] {
         color: white
     }
 
-    #cvmain {
+    #cvarticle {
         grid-area: 1 / 1 / 2 / 2;
         padding: 15px
     }
@@ -303,5 +323,20 @@ input[type="text"] {
         grid-area: 1 / 2 / 2 / 3;
         padding: 10px;
         background-color: rgb(58, 58, 58);
+        align-self: center;
     }
+
+    #sectionaboutme {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    
+    #articleaboutme {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+   #figaboutme {
+        grid-area: 1 / 2 / 2 / 3;
+        align-self: center;
+}
 }
